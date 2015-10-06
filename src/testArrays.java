@@ -19,6 +19,26 @@ public class testArrays {
         Assert.assertEquals(2, index);
     }
 
+    @Test
+    public void testMatchesRightAtBegining(){
+        int[] smallArray = new int[]{4,5};
+        int[] largeArray = new int[]{4,5,2,3};
+
+        int index = SubArray.findIndex(largeArray, smallArray);
+
+        Assert.assertEquals(0, index);
+    }
+
+    @Test
+    public void testWhenDummyMatchOccurs(){
+        int[] smallArray = new int[]{2,5};
+        int[] largeArray = new int[]{2,3,4,2,5};
+
+        int index = SubArray.findIndex(largeArray, smallArray);
+
+        Assert.assertEquals(3, index);
+    }
+
     // check case when empty array is passed
     @Test
     public void testEmptyLargeArrayReturnsCorrectly(){
