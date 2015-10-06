@@ -7,7 +7,7 @@ public class SubArray {
         int startingIndex = -1; // return -1 if largeArray does not contain smallArray
         boolean subArrayFound = false;
 
-        // check empty
+        // check if empty
         if(smallArray.length==0 || largeArray.length==0){
             return -1;
         }
@@ -17,8 +17,8 @@ public class SubArray {
             return -1;
         }
 
-        // check if array2 exists inside array1
-
+        // check if smallArray exists inside largeArray
+        
 
         return -1;
     }
