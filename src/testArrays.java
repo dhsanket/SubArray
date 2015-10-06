@@ -19,6 +19,7 @@ public class testArrays {
         Assert.assertEquals(2, index);
     }
 
+    // when the match exists right the start
     @Test
     public void testMatchesRightAtBegining(){
         int[] smallArray = new int[]{4,5};
@@ -29,6 +30,7 @@ public class testArrays {
         Assert.assertEquals(0, index);
     }
 
+    // when a partial match occurs 
     @Test
     public void testWhenDummyMatchOccurs(){
         int[] smallArray = new int[]{2,5};
